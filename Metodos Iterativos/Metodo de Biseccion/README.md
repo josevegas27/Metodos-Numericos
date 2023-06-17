@@ -5,7 +5,7 @@ El método de bisección es un método numérico para hallar ceros de una funci�
 Las condiciones para hallar raices de una función $ f $ en un intervalo $[a,b]$ con el método de Bisección son:
  
 - $f$ debe ser continua.
-- $f$ debe tener signos opuestos en los extremos del intervalo, es decir, $f(a)f(b) < 0.
+- $f$ debe tener signos opuestos en los extremos del intervalo, es decir, $f(a) \cdot f(b) < 0.
 
 En el archivo Metodo_biseccion.ipynb construimos el código que implementa el algoritmo de bisección para funciones que cumplen con las condiciones anteriores. 
 

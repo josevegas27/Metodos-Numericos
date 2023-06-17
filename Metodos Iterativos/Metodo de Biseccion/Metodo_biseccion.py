@@ -40,5 +40,10 @@ def biseccion(f,a ,b, expon, n, interaciones):
         p = (a + b)/2
         i += 1
 
+<<<<<<< HEAD
     print(f'No se alcanzó la precisión requerida hasta i={i-1} obteniendo la aproximación p_{-1+i}={round(p,n)}')
     return frame
+=======
+    print(f'No se alcanzÃ³ la precisiÃ³n requerida hasta i={i-1} obteniendo la raÃ­z p_{i-1}={round(p,n)}')
+    return frame
+>>>>>>> d2a5cbc8b8e36c5bfbc41915c6f3aa07eee2ac5d
