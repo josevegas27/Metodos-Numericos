@@ -3,7 +3,7 @@ import pandas as pd
 def biseccion(f,a ,b, expon, n, interaciones):
     i = 1
     p_anterior = a
-    error_relativo_aproximado = 10**(-expon)
+    error_relativo_aproximado = 10**(-expon - 2)
     p = (a + b)/2
     e_a2 = 0
     diccionario = {'i':[],'a_n':[],'b_n':[],'p_n':[],'f(p_n)':[],'e_r':[]}
@@ -40,5 +40,5 @@ def biseccion(f,a ,b, expon, n, interaciones):
         p = (a + b)/2
         i += 1
 
-    print(f'No se ha alcanzado la precisión requerida hasta i={i-1} obteniendo p_{i-1}={round(p,n)}')
+    print(f'No se alcanzó la precisión requerida hasta i={i-1} obteniendo la aproximación p_{i-1}={round(p,n)}')
     return frame
