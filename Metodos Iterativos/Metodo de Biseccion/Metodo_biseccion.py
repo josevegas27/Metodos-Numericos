@@ -3,7 +3,7 @@ import pandas as pd
 def biseccion(f,a ,b, expon, n, interaciones):
     i = 1
     p_anterior = a
-    error_relativo_aproximado = 10**(-expon - 2)
+    error_relativo_aproximado = 10**(-expon)
     p = (a + b)/2
     e_a2 = 0
     diccionario = {'i':[],'a_n':[],'b_n':[],'p_n':[],'f(p_n)':[],'e_r':[]}
@@ -27,7 +27,7 @@ def biseccion(f,a ,b, expon, n, interaciones):
             return frame
 
         if (e_a2)<error_relativo_aproximado:
-            print(f'La raiz aproximada es p{i}={round(p,n)}')
+            print(f'La raiz aproximada es p{i}{round(p,n)}')
             return frame
 
         if f(a)*c<0:
