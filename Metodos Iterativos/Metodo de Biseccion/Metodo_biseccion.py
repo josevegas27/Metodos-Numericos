@@ -27,7 +27,7 @@ def biseccion(f,a ,b, expon, n, interaciones):
             return frame
 
         if (e_a2)<error_relativo_aproximado:
-            print(f'La raiz aproximada es p{i}{round(p,n)}')
+            print(f'La raiz aproximada es p{i}={round(p,n)}')
             return frame
 
         if f(a)*c<0:
